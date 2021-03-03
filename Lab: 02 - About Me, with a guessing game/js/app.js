@@ -28,12 +28,14 @@ if (userconfirm === true){
   //answer is yes/y
   if (Questiontwo === 'y' || Questiontwo === 'yes'){
     score = score + 1;
-    console.log('correct answer ');
+    // console.log('correct answer ');
+    alert('correct answer ');
   } else if (Questionone === 'n' || Questionone === 'no') {
     score = score - 1;
-    console.log('wrong answer ');
+    // console.log('wrong answer ');
+    alert('wrong answer ');
   }else{
-    console.log('user input is valid not possible answer ');
+    // console.log('user input is valid not possible answer ');
     alert('please enter avalid input');
   }
 
@@ -43,12 +45,15 @@ if (userconfirm === true){
   if (Questionthree === 'y' || Questionthree === 'yes'){
     score = score - 1;
     // console.log('wrong answer ');
+    alert('wrong answer');
   } else if (Questionone === 'n' || Questionone === 'no') {
     score = score + 1;
     // console.log('correct answer ');
+    alert('correct answer');
   }else{
     alert('please enter avalid input');
     // console.log('user input is valid not possible answer ');
+    
   }
   //Questionfour
   let Questionfour = prompt('ANSWER WITH Y/N OR YES OR NO \n'+'WHAT DO YOU THINK IS MY EYSE COLOR\n?'+'FOR BLUE ANSWER WITH:Y/YES OR FOR BROWN ANSWER WITH NO/N').toLowerCase();
@@ -56,9 +61,11 @@ if (userconfirm === true){
   if (Questionfour === 'yes' || Questionfour === 'y'){
     score = score - 1;
     // console.log('correct answer ');
+    alert('correct answer');
   } else if (Questionone === 'n' || Questionone === 'no') {
     score = score + 1;
     // console.log('wrong answer ');
+    alert('wrong answer');
   }else{
     alert('please enter avalid input');
     // console.log('user input is valid not possible answer ');
@@ -69,9 +76,11 @@ if (userconfirm === true){
   if (Questionfive === 'yes' || Questionfive === 'y'){
     score = score - 1;
     // console.log('wrong answer ');
+    alert('wrong answer');
   } else if (Questionone === 'n' || Questionone === 'no'){
     score = score + 1;
     // console.log('correct answer ');
+    alert('correct answer');
   }else{
     alert('please enter avalid input');
     // console.log('user input is valid not possible answer ');
