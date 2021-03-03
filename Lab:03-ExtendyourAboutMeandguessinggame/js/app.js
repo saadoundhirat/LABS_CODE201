@@ -81,14 +81,14 @@ if (userconfirm === true){
   //Questionsex
   for (let index = 0; index < qsextry ; index++) {
     let userguess = prompt('mr:'+username+'\n'+'please guess anumber between 1-10'+'attempt number:'+ qussexattempt);
-    if ( userguess === number ) {
+    if ( parseInt(userguess) === number ) {
       alert('you are correct');
       score+=1;
       break;
-    } else if (userguess < number) {
+    } else if (parseInt(userguess) < number) {
       alert('your guess is too low');
       qussexattempt++;
-    } else if (userguess > number){
+    } else if (parseInt(userguess) > number){
       alert('your guess is too high');
       qussexattempt++;
     } else {
@@ -100,28 +100,27 @@ if (userconfirm === true){
     score = score-1 ;
   }
   //questionseven
+  var howmanytry = 0;
   let favseries =['gameofthrones', 'vikings', 'mrrobot', 'attackontitan', 'tribesofeuropa','thewalkingdead','supermanandlois','ginnygeorgia','thesinner','bridgerton',];
-  for (var i = 0; i < 6; i++) {
-    var useranswer = prompt('Can you guess my favorite series?');
+  for (howmanytry ; howmanytry < 6; howmanytry++) {
+    var useranswer = prompt('Can you guess my favorite series?'+'\n attempet'+howmanytry);
     var guess = useranswer.toLowerCase();
 
     for (var j = 0; j < favseries.length; j++){
       if (guess === favseries[j]) {
         alert('Congrats you got it right!!!');
         score+=score;
-        i = 6;
+        howmanytry = 6;
         break;
       }
     }
-    if (i !==6){
+    if (howmanytry !==6){
       alert('Sorry wrong answer, try again');
     }
     for (let index = 0; index < favseries.length; index++) {
       console.log(favseries[index]);
     }
   }
-
-
 
 
   alert('thanks for playing mr:'+username+'YOUR CORRECT ANSWERS IS\n' + score + 'OUT OF 7');
