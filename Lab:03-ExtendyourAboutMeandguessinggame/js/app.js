@@ -100,9 +100,9 @@ if (userconfirm === true){
     score = score-1 ;
   }
   //questionseven
-  var howmanytry = 0;
+  var howmanytry = 1;
   let favseries =['gameofthrones', 'vikings', 'mrrobot', 'attackontitan', 'tribesofeuropa','thewalkingdead','supermanandlois','ginnygeorgia','thesinner','bridgerton',];
-  for (howmanytry ; howmanytry < 6; howmanytry++) {
+  for (howmanytry ; howmanytry < 7; howmanytry++) {
     var useranswer = prompt('Can you guess my favorite series?'+'\n attempet'+howmanytry);
     var guess = useranswer.toLowerCase();
 
@@ -110,15 +110,18 @@ if (userconfirm === true){
       if (guess === favseries[j]) {
         alert('Congrats you got it right!!!');
         score+=score;
-        howmanytry = 6;
+        howmanytry = 7;
         break;
       }
     }
-    if (howmanytry !==6){
-      alert('Sorry wrong answer, try again');
+    if (howmanytry !==7){
+      alert('Sorry wrong answer, try again'+'\nvisit netflix it will help you'+ howmanytry);
     }
-    for (let index = 0; index < favseries.length; index++) {
-      console.log(favseries[index]);
+    if (howmanytry === 7 ){
+      alert('no more attempts');
+      for (let index = 0; index < favseries.length; index++) {
+        console.log(favseries[index]);
+      }
     }
   }
 
