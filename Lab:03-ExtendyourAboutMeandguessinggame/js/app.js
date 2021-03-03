@@ -124,7 +124,7 @@ if (userconfirm === true){
 
 
 
-  alert('thanks for playing mr:'+username+'YOUR CORRECT ANSWERS IS\n' + score + 'OUT OF 6');
+  alert('thanks for playing mr:'+username+'YOUR CORRECT ANSWERS IS\n' + score + 'OUT OF 7');
 
 }else {
   // console.log('Well youre boring');
