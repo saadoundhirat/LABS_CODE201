@@ -1,8 +1,10 @@
 'use strict';
-let userconfirm = confirm('Welcome! this page build to simulate a guessing game please confirm that you want to play my game ...');
+
+function playTheGame(){
 let number = 5;
 let qsextry = 4;
 let qussexattempt =1;
+let userconfirm = confirm('Welcome! this page build to simulate a guessing game please confirm that you want to play my game ...');
 if (userconfirm === true){
   // console.log('user have confirmed and want to play');
   //set inital counter score
@@ -133,6 +135,9 @@ if (userconfirm === true){
   // console.log('he didnt confirm');
   alert('Well you are boringggggggg bye bye');
 }
+}
+playTheGame();
+alert('This guessing game was modified by Omar and drived by sadoun');
 //it was simple and fun to do looking forward to update this lab
 //i really have no questions
 //three hour rang but the set up took most of this time
