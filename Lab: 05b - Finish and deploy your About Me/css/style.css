@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/Lab:\ 05b\ -\ Finish\ and\ deploy\ your\ About\ Me/images/background.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+/* nav play in horizental */
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+/* logo size */
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+/* icon size */
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+/* make nav go to right */
+nav {
+  flex: 1;
+  text-align: right;
+}
+/* to make list iteams play in same line with margin between them  */
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+/* add some decoration to the links  */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+/* shift it to another position */
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.col {
+  flex-basis: 50%;
+}
+/* add some color to h1  */
+h1 {
+  color: #fff;
+  font-size: 100px;
+}
+/*  add pargraph style */
+p {
+  color: #fff;
+  font-size: 11px;
+  line-height: 15px;
+}
+/* button style */
+button {
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+/* ADD STYLE TO THE CARDS */
+.card {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+.card1 {
+  background-image: url(/Lab:\ 05b\ -\ Finish\ and\ deploy\ your\ About\ Me/images/pic-1.png);
+}
+.card2 {
+  background-image: url(/Lab:\ 05b\ -\ Finish\ and\ deploy\ your\ About\ Me/images/pic-2.png);
+}
+.card3 {
+  background-image: url(/Lab:\ 05b\ -\ Finish\ and\ deploy\ your\ About\ Me/images/pic-3.png);
+}
+.card4 {
+  background-image: url(/Lab:\ 05b\ -\ Finish\ and\ deploy\ your\ About\ Me/images/pic-4.png);
+}
+
+/* adding hover effect */
+.card:hover {
+  transform: translateY(-10px);
+}
+/* change h5 color */
+h5 {
+  color: #fff;
+  text-shadow: 0 0 15px #000;
+}
+.card p {
+  font-size: 8px;
+  text-shadow: 0 0 15px #000;
+}
